@@ -26,6 +26,22 @@ namespace Linkedlist
             }
             Console.WriteLine("{0} inserted into the linked list", node.data);
         }
+        
+        internal void AddBefore(int data)
+        {
+            Node node = new Node(data);
+            if (this.head == null)
+            {
+                node.next = null;
+            }
+            else
+            {
+                node.next = head;
+            }
+            head = node;
+        }
     }
 }
+
+
 
