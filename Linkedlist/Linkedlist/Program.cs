@@ -10,7 +10,7 @@ namespace Linkedlist
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Linked List Data Structure Problem.");
-           
+
             Linkedliste list = new Linkedliste();
             list.Add(56);
             list.Add(30);
@@ -33,13 +33,22 @@ namespace Linkedlist
             list3.Display();
 
             Linkedliste list4 = new Linkedliste();
-           
+
             list4.Add(56);
             list4.Add(70);
             list4.InsertAtParticularPosition(2, 30);
             list4.Display();
+
+
+            Linkedliste list5 = new Linkedliste();
+            list5.Add(56);
+            list5.Add(30);
+            list5.Add(70);
+            list5.DeleteFirstNode();
+            list5.Display();
         }
     }
 }
+
 
 
