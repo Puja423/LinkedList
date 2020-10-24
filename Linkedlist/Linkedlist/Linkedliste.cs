@@ -92,7 +92,16 @@ namespace Linkedlist
                 }
                 this.head = head.next;
             }
-        
+        public void PopLast()
+        {
+            Node newNode = head;
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            newNode.next = null;
+        }
+
     }
 }
 
